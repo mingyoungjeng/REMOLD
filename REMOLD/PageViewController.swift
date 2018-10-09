@@ -21,7 +21,7 @@ class PageViewController: UIPageViewController {
         setViewControllers([getPageOne()], direction: .forward, animated: false, completion: nil)
         
         // Set dataSource: incorporates the pages
-        dataSource = self // Refers to the Pager extension of type UIPageViewControllerDataSource
+        dataSource = self // Refers to the PageViewController extension of type UIPageViewControllerDataSource
     }
 
     override func didReceiveMemoryWarning() {
@@ -76,13 +76,13 @@ extension PageViewController: UIPageViewControllerDataSource {
     }
     
     // Page control dots
-    func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int {
+    func presentationCount(for pageViewController: UIPageViewController) -> Int {
         // The number of dots in the page control dots
         return 2
     }
     
-    func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {
-        // On the first dot when you first load the OnboardingPager
+    func presentationIndex(for pageViewController: UIPageViewController) -> Int {
+        // On the first dot when you first load the PageViewController
         // Swift automatically handles switching pages and updating the page control dots
         // Updates when setViewControllers is called
         return 0
