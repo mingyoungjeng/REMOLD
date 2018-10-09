@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZI1-TU-Jun">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JEg-tl-5Mq">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,68 +10,43 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="xRZ-Ey-jnZ">
+        <!--Page View Controller-->
+        <scene sceneID="SOk-1b-txg">
             <objects>
-                <viewController id="cwj-va-Iax" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Y83-Ay-0ky">
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="JEg-tl-5Mq" customClass="PageViewController" customModule="REMOLD" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BwT-or-mrH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-948" y="-303"/>
+        </scene>
+        <!--One View Controller-->
+        <scene sceneID="fsk-lq-gYM">
+            <objects>
+                <viewController storyboardIdentifier="OneViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="y5N-Iy-4gg" customClass="OneViewController" customModule="REMOLD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c9h-j6-h9z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.98288321040268956" green="1" blue="0.91961264421383704" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <gestureRecognizers/>
-                        <viewLayoutGuide key="safeArea" id="wgg-ke-Pol"/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="hzx-TZ-I3N" appends="YES" id="9Wh-bg-hxc"/>
-                        </connections>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Izy-Hg-ud9"/>
                     </view>
-                    <navigationItem key="navigationItem" id="32h-um-U5C"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="e6P-4D-S6c" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="left" id="hzx-TZ-I3N">
-                    <connections>
-                        <segue destination="8Gn-ig-0Ag" kind="show" id="gUp-8o-47Y"/>
-                    </connections>
-                </swipeGestureRecognizer>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3yX-ui-eMX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="964" y="-177"/>
+            <point key="canvasLocation" x="-278" y="-303"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="FjY-R9-Kqk">
+        <!--Two View Controller-->
+        <scene sceneID="qUR-1l-f9r">
             <objects>
-                <viewController id="8Gn-ig-0Ag" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="lTm-rc-2dg">
+                <viewController storyboardIdentifier="TwoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Tet-i3-MMT" customClass="TwoViewController" customModule="REMOLD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Sj-RK-TFH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.78521054320000006" green="0.84885122170000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <gestureRecognizers/>
-                        <viewLayoutGuide key="safeArea" id="5ST-8W-98b"/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="Pfj-J9-3bf" appends="YES" id="3jI-e7-0u2"/>
-                        </connections>
+                        <color key="backgroundColor" red="0.56810637953367871" green="0.56810637953367871" blue="0.56810637953367871" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="XYH-iJ-9D4"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4yS-sR-k5X" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="Pfj-J9-3bf"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Ec-XZ-YUz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1657" y="-177"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="ujd-Rj-0xQ">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZI1-TU-Jun" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZF9-7D-ZOG">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="cwj-va-Iax" kind="relationship" relationship="rootViewController" id="3qE-tf-8Ze"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8ez-Qg-Yo1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="215.19999999999999" y="-176.76161919040482"/>
+            <point key="canvasLocation" x="446" y="-304"/>
         </scene>
     </scenes>
 </document>
