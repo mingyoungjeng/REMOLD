@@ -25,6 +25,18 @@ class PageViewController: UIPageViewController {
         // Set dataSource: incorporates the pages
         dataSource = self // Refers to the PageViewController extension of type UIPageViewControllerDataSource
     }
+    
+    // Sets page control background color to clear
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        for view in self.view.subviews {
+            if view is UIScrollView {
+                view.frame = UIScreen.main.bounds
+            } else if view is UIPageControl {
+                view.backgroundColor = UIColor.clear
+            }
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -32,7 +44,6 @@ class PageViewController: UIPageViewController {
     }
     
     func getPage(page: Int) -> UIViewController {
-        print("\(pages[page])")
         return storyboard!.instantiateViewController(withIdentifier: "\(pages[page])")
     }
 
@@ -84,7 +95,6 @@ extension PageViewController: UIPageViewControllerDataSource {
         
         // Sets new page unless on last page
         if viewController.isKind(of: pages[i]) {
-            print("hi" + "\(pages[i])")
             return getPage(page: i-1)
         } else {
             return nil

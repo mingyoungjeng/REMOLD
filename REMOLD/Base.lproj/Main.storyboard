@@ -31,7 +31,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3yX-ui-eMX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-278" y="-303"/>
+            <point key="canvasLocation" x="-313" y="-304"/>
         </scene>
         <!--Two View Controller-->
         <scene sceneID="qUR-1l-f9r">
@@ -46,7 +46,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Ec-XZ-YUz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="446" y="-304"/>
+            <point key="canvasLocation" x="329" y="-304"/>
         </scene>
         <!--Three View Controller-->
         <scene sceneID="N7B-rC-0Y2">
@@ -61,7 +61,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QXZ-85-l8K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1138" y="-304"/>
+            <point key="canvasLocation" x="982" y="-304"/>
         </scene>
         <!--Four View Controller-->
         <scene sceneID="1Oq-lv-n8d">
@@ -76,7 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tL6-NC-Llo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1926" y="-304"/>
+            <point key="canvasLocation" x="1642" y="-304"/>
         </scene>
     </scenes>
 </document>
