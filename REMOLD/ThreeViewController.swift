@@ -1,14 +1,14 @@
 //
-//  OneViewController.swift
+//  ThreeViewController.swift
 //  REMOLD
 //
-//  Created by Mingyoung J. Jeng 02 on 10/9/18.
+//  Created by Mingyoung J. Jeng 02 on 10/10/18.
 //  Copyright © 2018 CAPS. All rights reserved.
 //
 
 import UIKit
 
-class OneViewController: UIViewController {
+class ThreeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

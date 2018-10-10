@@ -11,6 +11,8 @@
 import UIKit
 
 class PageViewController: UIPageViewController {
+    
+    public let pages = [OneViewController.self, TwoViewController.self, ThreeViewController.self, FourViewController.self] // Array of all pages: Right to Left
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +20,7 @@ class PageViewController: UIPageViewController {
         // Do any additional setup after loading the view.
         
         // Loads the first page immediately after the pager loads
-        setViewControllers([getPageOne()], direction: .forward, animated: false, completion: nil)
+        setViewControllers([getPage(page: 0)], direction: .forward, animated: false, completion: nil)
         
         // Set dataSource: incorporates the pages
         dataSource = self // Refers to the PageViewController extension of type UIPageViewControllerDataSource
@@ -29,14 +31,9 @@ class PageViewController: UIPageViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func getPageOne() -> OneViewController {
-        // Retrieve the view
-        return storyboard!.instantiateViewController(withIdentifier: "OneViewController") as! OneViewController
-    }
-    
-    func getPageTwo() -> TwoViewController {
-        // Retrieve page two
-        return storyboard!.instantiateViewController(withIdentifier: "TwoViewController") as! TwoViewController
+    func getPage(page: Int) -> UIViewController {
+        print("\(pages[page])")
+        return storyboard!.instantiateViewController(withIdentifier: "\(pages[page])")
     }
 
     /*
@@ -54,11 +51,20 @@ extension PageViewController: UIPageViewControllerDataSource {
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         // Swiping forward
         
-        if viewController.isKind(of: OneViewController.self) { // If you're on page one
-            // We want to swipe to page two
-            return getPageTwo()
-        } else { // If on page two
-            // End of all pages
+        var i = 0
+        var loop = true
+        while (i < pages.count-2) && loop  {
+            if viewController.isKind(of: pages[i]) { // Tests pages to see determine id of current page
+                loop = false // Stops looping when identifies page
+            } else {
+                i += 1 // Increments when not on current page
+            }
+        }
+        
+        // Sets new page unless on last page
+        if viewController.isKind(of: pages[i]) {
+            return getPage(page: i+1)
+        } else {
             return nil
         }
     }
@@ -66,11 +72,21 @@ extension PageViewController: UIPageViewControllerDataSource {
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         // Swiping backward
         
-        if viewController.isKind(of: TwoViewController.self) {
-            // If on page two, can swipe back to page one
-            return getPageOne()
+        var i = pages.count-1
+        var loop = true
+        while (i > 1) && loop  {
+            if viewController.isKind(of: pages[i]) { // Tests pages to see determine id of current page
+                loop = false // Stops looping when identifies page
+            } else {
+                i -= 1 // Increments when not on current page
+            }
+        }
+        
+        // Sets new page unless on last page
+        if viewController.isKind(of: pages[i]) {
+            print("hi" + "\(pages[i])")
+            return getPage(page: i-1)
         } else {
-            // If on the first page, can't swipe back
             return nil
         }
     }
@@ -78,13 +94,13 @@ extension PageViewController: UIPageViewControllerDataSource {
     // Page control dots
     func presentationCount(for pageViewController: UIPageViewController) -> Int {
         // The number of dots in the page control dots
-        return 2
+        return pages.count
     }
     
     func presentationIndex(for pageViewController: UIPageViewController) -> Int {
         // On the first dot when you first load the PageViewController
         // Swift automatically handles switching pages and updating the page control dots
         // Updates when setViewControllers is called
-        return 0
+        return pages.count-1
     }
 }
