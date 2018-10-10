@@ -18,10 +18,10 @@
             </objects>
             <point key="canvasLocation" x="-948" y="-303"/>
         </scene>
-        <!--One View Controller-->
+        <!--Resources View Controller-->
         <scene sceneID="fsk-lq-gYM">
             <objects>
-                <viewController storyboardIdentifier="OneViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="y5N-Iy-4gg" customClass="OneViewController" customModule="REMOLD" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ResourcesViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="y5N-Iy-4gg" customClass="ResourcesViewController" customModule="REMOLD" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c9h-j6-h9z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,10 +33,10 @@
             </objects>
             <point key="canvasLocation" x="-313" y="-304"/>
         </scene>
-        <!--Two View Controller-->
+        <!--Goals View Controller-->
         <scene sceneID="qUR-1l-f9r">
             <objects>
-                <viewController storyboardIdentifier="TwoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Tet-i3-MMT" customClass="TwoViewController" customModule="REMOLD" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GoalsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Tet-i3-MMT" customClass="GoalsViewController" customModule="REMOLD" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Sj-RK-TFH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,10 +48,10 @@
             </objects>
             <point key="canvasLocation" x="329" y="-304"/>
         </scene>
-        <!--Three View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="N7B-rC-0Y2">
             <objects>
-                <viewController storyboardIdentifier="ThreeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MQf-I3-zHV" customClass="ThreeViewController" customModule="REMOLD" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MQf-I3-zHV" customClass="HomeViewController" customModule="REMOLD" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rsB-a4-Jq3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -63,10 +63,10 @@
             </objects>
             <point key="canvasLocation" x="982" y="-304"/>
         </scene>
-        <!--Four View Controller-->
+        <!--Journal View Controller-->
         <scene sceneID="1Oq-lv-n8d">
             <objects>
-                <viewController storyboardIdentifier="FourViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cu5-Xq-JRM" customClass="FourViewController" customModule="REMOLD" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JournalViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cu5-Xq-JRM" customClass="JournalViewController" customModule="REMOLD" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QN6-7V-24T">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -77,6 +77,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tL6-NC-Llo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1642" y="-304"/>
+        </scene>
+        <!--Games View Controller-->
+        <scene sceneID="Fhd-eT-SuG">
+            <objects>
+                <viewController storyboardIdentifier="GamesViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Wnn-7b-HSl" customClass="GamesViewController" customModule="REMOLD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qRy-xI-ne0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <viewLayoutGuide key="safeArea" id="EZY-GP-uju"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ffq-Kb-qXH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2334" y="-304"/>
         </scene>
     </scenes>
 </document>

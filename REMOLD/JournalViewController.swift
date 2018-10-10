@@ -1,5 +1,5 @@
 //
-//  FourViewController.swift
+//  JournalViewController.swift
 //  REMOLD
 //
 //  Created by Mingyoung J. Jeng 02 on 10/10/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FourViewController: UIViewController {
+class JournalViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

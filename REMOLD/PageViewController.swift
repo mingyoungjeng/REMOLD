@@ -12,7 +12,7 @@ import UIKit
 
 class PageViewController: UIPageViewController {
     
-    public let pages = [OneViewController.self, TwoViewController.self, ThreeViewController.self, FourViewController.self] // Array of all pages: Right to Left
+    public let pages = [GamesViewController.self, JournalViewController.self, HomeViewController.self, GoalsViewController.self, ResourcesViewController.self] // Array of all pages: Right to Left
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,10 +20,19 @@ class PageViewController: UIPageViewController {
         // Do any additional setup after loading the view.
         
         // Loads the first page immediately after the pager loads
-        setViewControllers([getPage(page: 0)], direction: .forward, animated: false, completion: nil)
+        setViewControllers([getPage(page: 2)], direction: .forward, animated: false, completion: nil)
         
         // Set dataSource: incorporates the pages
         dataSource = self // Refers to the PageViewController extension of type UIPageViewControllerDataSource
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    func getPage(page: Int) -> UIViewController {
+        return storyboard!.instantiateViewController(withIdentifier: "\(pages[page])")
     }
     
     // Sets page control background color to clear
@@ -36,15 +45,6 @@ class PageViewController: UIPageViewController {
                 view.backgroundColor = UIColor.clear
             }
         }
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    func getPage(page: Int) -> UIViewController {
-        return storyboard!.instantiateViewController(withIdentifier: "\(pages[page])")
     }
 
     /*
@@ -63,10 +63,9 @@ extension PageViewController: UIPageViewControllerDataSource {
         // Swiping forward
         
         var i = 0
-        var loop = true
-        while (i < pages.count-2) && loop  {
+        while (i < pages.count-2)  {
             if viewController.isKind(of: pages[i]) { // Tests pages to see determine id of current page
-                loop = false // Stops looping when identifies page
+                break // Stops looping when identifies page
             } else {
                 i += 1 // Increments when not on current page
             }
@@ -84,10 +83,9 @@ extension PageViewController: UIPageViewControllerDataSource {
         // Swiping backward
         
         var i = pages.count-1
-        var loop = true
-        while (i > 1) && loop  {
+        while (i > 1) {
             if viewController.isKind(of: pages[i]) { // Tests pages to see determine id of current page
-                loop = false // Stops looping when identifies page
+                break // Stops looping when identifies page
             } else {
                 i -= 1 // Increments when not on current page
             }
@@ -111,6 +109,6 @@ extension PageViewController: UIPageViewControllerDataSource {
         // On the first dot when you first load the PageViewController
         // Swift automatically handles switching pages and updating the page control dots
         // Updates when setViewControllers is called
-        return pages.count-1
+        return 2
     }
 }

@@ -1,5 +1,5 @@
 //
-//  ThreeViewController.swift
+//  GoalsViewController.swift
 //  REMOLD
 //
 //  Created by Mingyoung J. Jeng 02 on 10/10/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ThreeViewController: UIViewController {
+class GoalsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
