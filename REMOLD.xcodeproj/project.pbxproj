@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B11B29C32180E9E500BC90BE /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B11B29C22180E9E500BC90BE /* Settings.bundle */; };
 		B121340A216D2640006265F3 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1213409216D2640006265F3 /* PageViewController.swift */; };
 		B121340C216D26B2006265F3 /* ResourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B121340B216D26B2006265F3 /* ResourcesViewController.swift */; };
 		B12DEC4F21668D16002A60E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12DEC4E21668D16002A60E0 /* AppDelegate.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B11B29C22180E9E500BC90BE /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = REMOLD/Settings.bundle; sourceTree = "<group>"; };
 		B1213409216D2640006265F3 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		B121340B216D26B2006265F3 /* ResourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesViewController.swift; sourceTree = "<group>"; };
 		B12DEC4B21668D16002A60E0 /* REMOLD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = REMOLD.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +89,7 @@
 		B12DEC4221668D16002A60E0 = {
 			isa = PBXGroup;
 			children = (
+				B11B29C22180E9E500BC90BE /* Settings.bundle */,
 				B12DEC4D21668D16002A60E0 /* REMOLD */,
 				B12DEC6421668D23002A60E0 /* REMOLDTests */,
 				B12DEC6F21668D23002A60E0 /* REMOLDUITests */,
@@ -244,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B11B29C32180E9E500BC90BE /* Settings.bundle in Resources */,
 				B12DEC5B21668D23002A60E0 /* LaunchScreen.storyboard in Resources */,
 				B12DEC5821668D23002A60E0 /* Assets.xcassets in Resources */,
 				B12DEC5621668D16002A60E0 /* Main.storyboard in Resources */,
