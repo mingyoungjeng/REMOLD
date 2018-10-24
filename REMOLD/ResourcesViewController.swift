@@ -10,6 +10,8 @@ import UIKit
 
 class ResourcesViewController: UIViewController {
 
+    var NAMI_URL = URL(string: "https://www.nami.org")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,7 +23,10 @@ class ResourcesViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func topButton(_ sender: UIButton) {
+        UIApplication.shared.open(NAMI_URL!, options: [:])
+    }
+    
     /*
     // MARK: - Navigation
 

@@ -25,13 +25,23 @@
                     <view key="view" contentMode="scaleToFill" id="c9h-j6-h9z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDH-6I-aBU">
+                                <rect key="frame" x="54" y="132" width="266" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="National Alliance on Mental Illness"/>
+                                <connections>
+                                    <action selector="topButton:" destination="y5N-Iy-4gg" eventType="touchDown" id="uzx-gW-gnJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.59274849923712969" blue="0.57099397502503613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Izy-Hg-ud9"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3yX-ui-eMX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-313" y="-304"/>
+            <point key="canvasLocation" x="-314.39999999999998" y="-304.4977511244378"/>
         </scene>
         <!--Liberations View Controller-->
         <scene sceneID="qUR-1l-f9r">
