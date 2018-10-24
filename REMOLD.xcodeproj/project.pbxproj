@@ -15,7 +15,7 @@
 		B12DEC5B21668D23002A60E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B12DEC5921668D23002A60E0 /* LaunchScreen.storyboard */; };
 		B12DEC6621668D23002A60E0 /* REMOLDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12DEC6521668D23002A60E0 /* REMOLDTests.swift */; };
 		B12DEC7121668D23002A60E0 /* REMOLDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12DEC7021668D23002A60E0 /* REMOLDUITests.swift */; };
-		B13EB02F216E3AAA002F4713 /* GoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13EB02E216E3AAA002F4713 /* GoalsViewController.swift */; };
+		B13EB02F216E3AAA002F4713 /* LiberationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13EB02E216E3AAA002F4713 /* LiberationsViewController.swift */; };
 		B13EB031216E3ACE002F4713 /* GamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13EB030216E3ACE002F4713 /* GamesViewController.swift */; };
 		B13EB033216E3ADB002F4713 /* JournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13EB032216E3ADB002F4713 /* JournalViewController.swift */; };
 		B13EB035216E4901002F4713 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13EB034216E4901002F4713 /* HomeViewController.swift */; };
@@ -53,7 +53,7 @@
 		B12DEC6C21668D23002A60E0 /* REMOLDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = REMOLDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B12DEC7021668D23002A60E0 /* REMOLDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REMOLDUITests.swift; sourceTree = "<group>"; };
 		B12DEC7221668D23002A60E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B13EB02E216E3AAA002F4713 /* GoalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsViewController.swift; sourceTree = "<group>"; };
+		B13EB02E216E3AAA002F4713 /* LiberationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiberationsViewController.swift; sourceTree = "<group>"; };
 		B13EB030216E3ACE002F4713 /* GamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesViewController.swift; sourceTree = "<group>"; };
 		B13EB032216E3ADB002F4713 /* JournalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalViewController.swift; sourceTree = "<group>"; };
 		B13EB034216E4901002F4713 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -112,7 +112,7 @@
 				B13EB034216E4901002F4713 /* HomeViewController.swift */,
 				B1213409216D2640006265F3 /* PageViewController.swift */,
 				B121340B216D26B2006265F3 /* ResourcesViewController.swift */,
-				B13EB02E216E3AAA002F4713 /* GoalsViewController.swift */,
+				B13EB02E216E3AAA002F4713 /* LiberationsViewController.swift */,
 				B13EB030216E3ACE002F4713 /* GamesViewController.swift */,
 				B13EB032216E3ADB002F4713 /* JournalViewController.swift */,
 				B12DEC5721668D23002A60E0 /* Assets.xcassets */,
@@ -275,7 +275,7 @@
 				B121340C216D26B2006265F3 /* ResourcesViewController.swift in Sources */,
 				B13EB033216E3ADB002F4713 /* JournalViewController.swift in Sources */,
 				B121340A216D2640006265F3 /* PageViewController.swift in Sources */,
-				B13EB02F216E3AAA002F4713 /* GoalsViewController.swift in Sources */,
+				B13EB02F216E3AAA002F4713 /* LiberationsViewController.swift in Sources */,
 				B13EB035216E4901002F4713 /* HomeViewController.swift in Sources */,
 				B13EB031216E3ACE002F4713 /* GamesViewController.swift in Sources */,
 			);

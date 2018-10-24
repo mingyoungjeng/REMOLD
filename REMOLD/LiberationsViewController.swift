@@ -1,5 +1,5 @@
 //
-//  GoalsViewController.swift
+//  LiberationsViewController.swift
 //  REMOLD
 //
 //  Created by Mingyoung J. Jeng 02 on 10/10/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GoalsViewController: UIViewController {
+class LiberationsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

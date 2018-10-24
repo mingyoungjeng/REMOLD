@@ -33,10 +33,10 @@
             </objects>
             <point key="canvasLocation" x="-313" y="-304"/>
         </scene>
-        <!--Goals View Controller-->
+        <!--Liberations View Controller-->
         <scene sceneID="qUR-1l-f9r">
             <objects>
-                <viewController storyboardIdentifier="GoalsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Tet-i3-MMT" customClass="GoalsViewController" customModule="REMOLD" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LiberationsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Tet-i3-MMT" customClass="LiberationsViewController" customModule="REMOLD" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Sj-RK-TFH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

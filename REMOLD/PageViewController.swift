@@ -12,7 +12,7 @@ import UIKit
 
 class PageViewController: UIPageViewController {
     
-    public let pages = [GamesViewController.self, JournalViewController.self, HomeViewController.self, GoalsViewController.self, ResourcesViewController.self] // Array of all pages: Right to Left
+    public let pages = [GamesViewController.self, JournalViewController.self, HomeViewController.self, LiberationsViewController.self, ResourcesViewController.self] // Array of all pages: Right to Left
 
     override func viewDidLoad() {
         super.viewDidLoad()
