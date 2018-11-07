@@ -20,6 +20,7 @@
 		B13EB031216E3ACE002F4713 /* GamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13EB030216E3ACE002F4713 /* GamesViewController.swift */; };
 		B13EB033216E3ADB002F4713 /* JournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13EB032216E3ADB002F4713 /* JournalViewController.swift */; };
 		B13EB035216E4901002F4713 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13EB034216E4901002F4713 /* HomeViewController.swift */; };
+		B1B1015E219382CC006F8E17 /* ResourcesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B1015D219382CC006F8E17 /* ResourcesTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		B13EB030216E3ACE002F4713 /* GamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesViewController.swift; sourceTree = "<group>"; };
 		B13EB032216E3ADB002F4713 /* JournalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalViewController.swift; sourceTree = "<group>"; };
 		B13EB034216E4901002F4713 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B1B1015D219382CC006F8E17 /* ResourcesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				B13EB02E216E3AAA002F4713 /* LiberationsViewController.swift */,
 				B13EB030216E3ACE002F4713 /* GamesViewController.swift */,
 				B13EB032216E3ADB002F4713 /* JournalViewController.swift */,
+				B1B1015D219382CC006F8E17 /* ResourcesTableViewCell.swift */,
 				B12DEC5721668D23002A60E0 /* Assets.xcassets */,
 				B12DEC5921668D23002A60E0 /* LaunchScreen.storyboard */,
 				B12DEC5C21668D23002A60E0 /* Info.plist */,
@@ -280,6 +283,7 @@
 				B13EB033216E3ADB002F4713 /* JournalViewController.swift in Sources */,
 				B121340A216D2640006265F3 /* PageViewController.swift in Sources */,
 				B13EB02F216E3AAA002F4713 /* LiberationsViewController.swift in Sources */,
+				B1B1015E219382CC006F8E17 /* ResourcesTableViewCell.swift in Sources */,
 				B13EB035216E4901002F4713 /* HomeViewController.swift in Sources */,
 				B13EB031216E3ACE002F4713 /* GamesViewController.swift in Sources */,
 			);

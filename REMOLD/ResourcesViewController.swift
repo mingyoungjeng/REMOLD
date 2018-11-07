@@ -8,9 +8,12 @@
 
 import UIKit
 
-class ResourcesViewController: UIViewController {
+class ResourcesViewController: UITableViewController {
 
     var NAMI_URL = URL(string: "https://www.nami.org")
+    var ADAA_URL = URL(string: "http://treatment.adaa.org")
+    var NIMH_URL = URL(string: "https://www.nimh.nih.gov")
+    var LIFELINE_URL = URL(string: "http://www.suicidepreventionlifeline.org")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,10 +26,6 @@ class ResourcesViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func topButton(_ sender: UIButton) {
-        UIApplication.shared.open(NAMI_URL!, options: [:])
-    }
-    
     /*
     // MARK: - Navigation
 
@@ -36,5 +35,5 @@ class ResourcesViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
 }
