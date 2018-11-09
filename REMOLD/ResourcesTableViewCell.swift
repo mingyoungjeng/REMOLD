@@ -16,7 +16,7 @@ class ResourcesTableViewCell: UITableViewCell {
     var link = URL(string: "")
     var number = URL(string: "")
     @IBAction func CallButton(_ sender: UIButton) {
-        UIApplication.shared.open(number!, options: [:])
+        UIApplication.shared.open(number!)
     }
     
     override func awakeFromNib() {
@@ -26,7 +26,7 @@ class ResourcesTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        if isSelected {UIApplication.shared.open(link!, options: [:])}
+        if isSelected {UIApplication.shared.open(link!)}
     }
 
 }

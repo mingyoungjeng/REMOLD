@@ -19,12 +19,14 @@ class ResourcesTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
 
         resources += [
             Resource(name: "National Alliance on Mental Illness", url: URL(string: "https://www.nami.org")!, phone: URL(string: "tel://18009506264")!),
-            /*Resource(name: "Anxiety and Depression Association of America", url: URL(string: "http://treatment.adaa.org")!),
-            Resource(name: "National Institute of Mental Health", url: URL(string: "https://www.nimh.nih.gov")!),
-            Resource(name: "Suicide Prevention Lifeline", url: URL(string: "http://www.suicidepreventionlifeline.org")!)*/
+            Resource(name: "Anxiety and Depression Association of America", url: URL(string: "http://treatment.adaa.org")!, phone: URL(string: "tel://12404851001")!),
+            Resource(name: "National Institute of Mental Health", url: URL(string: "https://www.nimh.nih.gov")!, phone: URL(string: "tel://18666156464")!),
+            Resource(name: "Suicide Prevention Lifeline", url: URL(string: "http://www.suicidepreventionlifeline.org")!, phone: URL(string: "tel://18002738255")!)
         ]
         
         // Uncomment the following line to preserve selection between presentations
@@ -60,7 +62,6 @@ class ResourcesTableViewController: UITableViewController {
         cell.Label.text = resource.name
         cell.link = resource.url
         cell.number = resource.phone
-        
 
         return cell
     }
