@@ -20,7 +20,7 @@ class ResourcesTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
+        //self.navigationController?.setNavigationBarHidden(false, animated: true)
 
         resources += [
             Resource(name: "National Alliance on Mental Illness", url: URL(string: "https://www.nami.org")!, phone: URL(string: "tel://18009506264")!),
@@ -110,5 +110,6 @@ class ResourcesTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
     
 }
