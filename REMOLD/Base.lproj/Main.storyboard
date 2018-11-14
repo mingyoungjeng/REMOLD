@@ -115,20 +115,81 @@
             </objects>
             <point key="canvasLocation" x="982" y="-304"/>
         </scene>
-        <!--Journal View Controller-->
-        <scene sceneID="1Oq-lv-n8d">
+        <!--JournalTableViewController-->
+        <scene sceneID="1ah-4t-c1J">
             <objects>
-                <viewController storyboardIdentifier="JournalViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cu5-Xq-JRM" customClass="JournalViewController" customModule="REMOLD" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="QN6-7V-24T">
+                <tableViewController storyboardIdentifier="JournalTableViewController" title="JournalTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Klp-tG-AqR" customClass="JournalTableViewController" customModule="REMOLD" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="rH1-7H-gaI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="vpf-7j-Gx1"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tL6-NC-Llo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="cDN-av-1oF">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cDN-av-1oF" id="D9N-Ot-wYG">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Klp-tG-AqR" id="5F9-f1-ccU"/>
+                            <outlet property="delegate" destination="Klp-tG-AqR" id="zFc-Zk-qjA"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Journals" id="G49-Zy-Zy7">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="kjt-un-ZjC">
+                            <connections>
+                                <segue destination="gaG-xt-bjt" kind="presentation" identifier="AddSegue" id="Xis-Hh-qpc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ukm-dF-dXa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1642" y="-304"/>
+            <point key="canvasLocation" x="1641" y="-304"/>
+        </scene>
+        <!--Add Journal-->
+        <scene sceneID="jEi-PJ-RsN">
+            <objects>
+                <viewController storyboardIdentifier="AddJournalViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Kgh-G0-pVh" customClass="AddJournalViewController" customModule="REMOLD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dQL-pr-4Ar">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="b24-DF-5Yi"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Journal" id="jpj-Je-s5S">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Hmf-Rp-Bsl">
+                            <connections>
+                                <action selector="dismissWithSegue:" destination="Kgh-G0-pVh" id="maB-pz-Nb4"/>
+                                <segue destination="ZXe-XG-sof" kind="unwind" unwindAction="unwindtoJournalTableViewController:" id="VVP-lS-p9i"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Egs-Z6-Ny8"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J5S-Ow-shi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ZXe-XG-sof" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2326" y="375"/>
+        </scene>
+        <!--Journal View Controller-->
+        <scene sceneID="Nbd-yf-cMH">
+            <objects>
+                <navigationController storyboardIdentifier="JournalViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PfZ-yT-88d" customClass="JournalViewController" customModule="REMOLD" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="z8f-bA-mXi">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Klp-tG-AqR" kind="relationship" relationship="rootViewController" id="Q6u-nL-ZbN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sDs-CF-8v3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1641" y="-961"/>
         </scene>
         <!--Games View Controller-->
         <scene sceneID="Fhd-eT-SuG">
@@ -143,7 +204,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ffq-Kb-qXH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2334" y="-304"/>
+            <point key="canvasLocation" x="2326" y="-305"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dBg-AU-6wW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gaG-xt-bjt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ehl-Fo-a4Z">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Kgh-G0-pVh" kind="relationship" relationship="rootViewController" id="TXv-ct-aC8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HKU-Q4-tuj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1641" y="375"/>
         </scene>
     </scenes>
 </document>

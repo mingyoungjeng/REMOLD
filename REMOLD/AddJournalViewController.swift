@@ -1,5 +1,5 @@
 //
-//  JournalViewController.swift
+//  AddJournalViewController.swift
 //  REMOLD
 //
 //  Created by Mingyoung J. Jeng 02 on 11/14/18.
@@ -8,15 +8,12 @@
 
 import UIKit
 
-class JournalViewController: UINavigationController {
+class AddJournalViewController: UIViewController {
     
-    @IBAction func unwindtoJournalTableViewController (_ segue:UIStoryboardSegue) {
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,7 +21,6 @@ class JournalViewController: UINavigationController {
         // Dispose of any resources that can be recreated.
     }
     
-
     /*
     // MARK: - Navigation
 

@@ -1,40 +1,20 @@
 //
-//  ResourcesTableViewController.swift
+//  JournalTableViewController.swift
 //  REMOLD
 //
-//  Created by Mingyoung J. Jeng 02 on 11/8/18.
+//  Created by Mingyoung J. Jeng 02 on 11/14/18.
 //  Copyright © 2018 CAPS. All rights reserved.
 //
 
 import UIKit
 
-class ResourcesTableViewController: UITableViewController {
-    
-    struct Resource {
-        var name: String
-        var url: URL
-        var phone: URL
-    }
-    var resources = [Resource]()
+class JournalTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //self.navigationController?.setNavigationBarHidden(false, animated: true)
 
-        resources += [
-            Resource(name: "National Alliance on Mental Illness", url: URL(string: "https://www.nami.org")!, phone: URL(string: "tel://18009506264")!),
-            Resource(name: "Anxiety and Depression Association of America", url: URL(string: "http://treatment.adaa.org")!, phone: URL(string: "tel://12404851001")!),
-            Resource(name: "National Institute of Mental Health", url: URL(string: "https://www.nimh.nih.gov")!, phone: URL(string: "tel://18666156464")!),
-            Resource(name: "Suicide Prevention Lifeline", url: URL(string: "http://www.suicidepreventionlifeline.org")!, phone: URL(string: "tel://18002738255")!)
-            
-        ]
-        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,27 +25,24 @@ class ResourcesTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        // #warning Incomplete implementation, return the number of sections
+        return 0
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return resources.count
+        // #warning Incomplete implementation, return the number of rows
+        return 0
     }
 
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cellIdentifier = "ResourcesTableViewCell"
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? ResourcesTableViewCell  else {
-            fatalError("The dequeued cell is not an instance of ResourcesTableViewCell.")
-        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
-        let resource = resources[indexPath.row]
-        cell.Label.text = resource.name
-        cell.link = resource.url
-        cell.number = resource.phone
+        // Configure the cell...
 
         return cell
     }
+    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -111,5 +88,5 @@ class ResourcesTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    
+
 }
