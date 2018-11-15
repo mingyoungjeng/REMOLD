@@ -7,12 +7,12 @@
 //
 
 import UIKit
+import PDFKit
 
 class JournalTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
     }
@@ -33,7 +33,14 @@ class JournalTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return 0
     }
-
+    @IBAction func ShareJournal(_ sender: UIBarButtonItem) {
+    /*
+        let journals: PDFDocument
+        let vc = UIActivityViewController(activityItems: [journals], applicationActivities: [])
+        present(vc, animated: true)
+    */
+    }
+    
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
