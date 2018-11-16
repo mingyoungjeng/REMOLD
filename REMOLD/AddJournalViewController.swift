@@ -10,25 +10,31 @@ import UIKit
 
 class AddJournalViewController: UIViewController {
     
+    @IBOutlet weak var textView: UITextView!
+    var inited = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
+        
+        textView.delegate = self
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func Save(_ sender: UIBarButtonItem) {
+        print(textView.text!)
     }
-    */
+    
+}
 
+extension AddJournalViewController: UITextViewDelegate {
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if (inited == false) {
+            textView.text = ""
+            inited = true
+        }
+    }
 }

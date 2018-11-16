@@ -8,8 +8,15 @@
 
 import UIKit
 import PDFKit
+import os.log
 
 class JournalTableViewController: UITableViewController {
+    
+    var journals = [Journal]()
+    
+    @IBAction func unwindtoJournalTableViewController (_ segue:UIStoryboardSegue) {
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +46,19 @@ class JournalTableViewController: UITableViewController {
         let vc = UIActivityViewController(activityItems: [journals], applicationActivities: [])
         present(vc, animated: true)
     */
+    }
+    
+    private func saveJournals() {
+        let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(journals, toFile: Journal.ArchiveURL.path)
+        if isSuccessfulSave {
+            os_log("Journal successfully saved.", log: OSLog.default, type: .debug)
+        } else {
+            os_log("Failed to save journal...", log: OSLog.default, type: .error)
+        }
+    }
+    
+    private func loadJournals() -> [Journal]?  {
+        return NSKeyedUnarchiver.unarchiveObject(withFile: Journal.ArchiveURL.path) as? [Journal]
     }
     
     /*

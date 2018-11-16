@@ -163,7 +163,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="test" translatesAutoresizingMaskIntoConstraints="NO" id="zVI-I1-rsA" customClass="UITextViewPlaceholder" customModule="REMOLD" customModuleProvider="target">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="test" translatesAutoresizingMaskIntoConstraints="NO" id="zVI-I1-rsA">
                                 <rect key="frame" x="16" y="111" width="343" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -182,8 +182,15 @@
                                 <segue destination="ZXe-XG-sof" kind="unwind" unwindAction="unwindtoJournalTableViewController:" id="VVP-lS-p9i"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Egs-Z6-Ny8"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Egs-Z6-Ny8">
+                            <connections>
+                                <action selector="Save:" destination="Kgh-G0-pVh" id="hcD-PJ-jIS"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="textView" destination="zVI-I1-rsA" id="gFx-6A-yva"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J5S-Ow-shi" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="ZXe-XG-sof" userLabel="Exit" sceneMemberID="exit"/>

@@ -7,11 +7,9 @@
 //
 
 import UIKit
+import os.log
 
 class JournalViewController: UINavigationController {
-    
-    @IBAction func unwindtoJournalTableViewController (_ segue:UIStoryboardSegue) {
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B111C569219F580000C2E848 /* Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B111C568219F580000C2E848 /* Journal.swift */; };
 		B11B29C32180E9E500BC90BE /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B11B29C22180E9E500BC90BE /* Settings.bundle */; };
 		B121340A216D2640006265F3 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1213409216D2640006265F3 /* PageViewController.swift */; };
 		B12DEC4F21668D16002A60E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12DEC4E21668D16002A60E0 /* AppDelegate.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B111C568219F580000C2E848 /* Journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journal.swift; sourceTree = "<group>"; };
 		B11B29C22180E9E500BC90BE /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = REMOLD/Settings.bundle; sourceTree = "<group>"; };
 		B1213409216D2640006265F3 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		B12DEC4B21668D16002A60E0 /* REMOLD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = REMOLD.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +124,7 @@
 			children = (
 				B12DEC4E21668D16002A60E0 /* AppDelegate.swift */,
 				B12DEC5421668D16002A60E0 /* Main.storyboard */,
+				B111C568219F580000C2E848 /* Journal.swift */,
 				B142F472219CB05800FCF5F5 /* AddJournalViewController.swift */,
 				B142F470219CA87900FCF5F5 /* JournalTableViewController.swift */,
 				B16EEC22219A171B00F1DC27 /* NavigationViewController.swift */,
@@ -302,6 +305,7 @@
 				B1B1015E219382CC006F8E17 /* ResourcesTableViewCell.swift in Sources */,
 				B13EB035216E4901002F4713 /* HomeViewController.swift in Sources */,
 				B13EB031216E3ACE002F4713 /* GamesViewController.swift in Sources */,
+				B111C569219F580000C2E848 /* Journal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
