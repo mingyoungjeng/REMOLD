@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B111C569219F580000C2E848 /* Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B111C568219F580000C2E848 /* Journal.swift */; };
+		B111C56B21A3513B00C2E848 /* JournalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B111C56A21A3513B00C2E848 /* JournalTableViewCell.swift */; };
 		B11B29C32180E9E500BC90BE /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B11B29C22180E9E500BC90BE /* Settings.bundle */; };
 		B121340A216D2640006265F3 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1213409216D2640006265F3 /* PageViewController.swift */; };
 		B12DEC4F21668D16002A60E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12DEC4E21668D16002A60E0 /* AppDelegate.swift */; };
@@ -47,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		B111C568219F580000C2E848 /* Journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journal.swift; sourceTree = "<group>"; };
+		B111C56A21A3513B00C2E848 /* JournalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalTableViewCell.swift; sourceTree = "<group>"; };
 		B11B29C22180E9E500BC90BE /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = REMOLD/Settings.bundle; sourceTree = "<group>"; };
 		B1213409216D2640006265F3 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		B12DEC4B21668D16002A60E0 /* REMOLD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = REMOLD.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +129,7 @@
 				B111C568219F580000C2E848 /* Journal.swift */,
 				B142F472219CB05800FCF5F5 /* AddJournalViewController.swift */,
 				B142F470219CA87900FCF5F5 /* JournalTableViewController.swift */,
+				B111C56A21A3513B00C2E848 /* JournalTableViewCell.swift */,
 				B16EEC22219A171B00F1DC27 /* NavigationViewController.swift */,
 				B142F46E219CA84D00FCF5F5 /* JournalViewController.swift */,
 				B13EB034216E4901002F4713 /* HomeViewController.swift */,
@@ -296,6 +299,7 @@
 			files = (
 				B12DEC4F21668D16002A60E0 /* AppDelegate.swift in Sources */,
 				B142F46F219CA84D00FCF5F5 /* JournalViewController.swift in Sources */,
+				B111C56B21A3513B00C2E848 /* JournalTableViewCell.swift in Sources */,
 				B142F471219CA87900FCF5F5 /* JournalTableViewController.swift in Sources */,
 				B121340A216D2640006265F3 /* PageViewController.swift in Sources */,
 				B142F473219CB05800FCF5F5 /* AddJournalViewController.swift in Sources */,

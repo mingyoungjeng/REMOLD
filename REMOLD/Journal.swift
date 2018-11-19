@@ -26,9 +26,6 @@ class Journal: NSObject, NSCoding {
     
     init?(date: Date, entry: String) {
         
-        // The date must not be empty
-        // TO DO LATER
-        
         // The entry must not be empty
         guard !entry.isEmpty else {
             return nil
@@ -52,7 +49,7 @@ class Journal: NSObject, NSCoding {
             return nil
         }
         
-        // Because photo is an optional property of Meal, just use conditional cast.
+        // Because date is an optional property of Journal, just use conditional cast.
         let date = aDecoder.decodeObject(forKey: PropertyKey.date) as? Date
         
         // Must call designated initializer.
