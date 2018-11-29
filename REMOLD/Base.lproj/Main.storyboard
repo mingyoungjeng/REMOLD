@@ -133,7 +133,7 @@
         <scene sceneID="1ah-4t-c1J">
             <objects>
                 <tableViewController storyboardIdentifier="JournalTableViewController" title="JournalTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Klp-tG-AqR" customClass="JournalTableViewController" customModule="REMOLD" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="rH1-7H-gaI">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="280" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="rH1-7H-gaI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -219,11 +219,12 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="Egs-Z6-Ny8">
                             <connections>
-                                <action selector="Save:" destination="Kgh-G0-pVh" id="hcD-PJ-jIS"/>
+                                <segue destination="ZXe-XG-sof" kind="unwind" unwindAction="unwindtoJournalTableViewController:" id="Ebs-7v-v78"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="saveButton" destination="Egs-Z6-Ny8" id="KNm-Qt-WRW"/>
                         <outlet property="textView" destination="zVI-I1-rsA" id="gFx-6A-yva"/>
                     </connections>
                 </viewController>

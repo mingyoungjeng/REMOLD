@@ -18,6 +18,17 @@ class JournalTableViewController: UITableViewController {
     // Unwinds from AddJournalViewController
     @IBAction func unwindtoJournalTableViewController (_ segue:UIStoryboardSegue) {
         
+        if let sourceViewController = segue.source as? AddJournalViewController, let entry = sourceViewController.entry {
+            
+            let currentDate = Date()
+            let newIndexPath = IndexPath(row: journals.count, section: 0)
+            let journal = Journal(date: currentDate, entry: entry)
+            journals.append(journal!)
+            tableView.insertRows(at: [newIndexPath], with: .automatic)
+            
+            // Save the meals.
+            saveJournals()
+        }
     }
     
     override func viewDidLoad() {
@@ -51,7 +62,7 @@ class JournalTableViewController: UITableViewController {
             fatalError("The dequeued cell is not an instance of JournalTableViewCell.")
         }
         
-        // Fetches the appropriate meal for the data source layout.
+        // Fetches the appropriate one for the data source layout.
         let journal = journals[indexPath.row]
         
         cell.dateLabel.text = dateFormatter.string(from: journal.date)
