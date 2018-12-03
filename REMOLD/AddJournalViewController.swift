@@ -20,6 +20,9 @@ class AddJournalViewController: UIViewController {
         super.viewDidLoad()
         
         textView.delegate = self
+        
+        let prompts = ["prompt1","prompt2","prompt3","prompt4"]
+        textView.text = prompts.randomElement()
     }
     
     override func didReceiveMemoryWarning() {
