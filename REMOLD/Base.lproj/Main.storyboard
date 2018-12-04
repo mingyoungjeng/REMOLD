@@ -376,6 +376,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="brain" width="287" height="229"/>
         <image name="buttonPressed" width="600" height="600"/>
         <image name="circle-png-circle-png-hd-1600" width="1600" height="1600"/>
         <image name="gear" width="840" height="493"/>
