@@ -116,12 +116,20 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sleepy brain" translatesAutoresizingMaskIntoConstraints="NO" id="2Ty-LC-rCq">
-                                <rect key="frame" x="-10" y="253" width="395" height="307"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brain" translatesAutoresizingMaskIntoConstraints="NO" id="2Ty-LC-rCq">
+                                <rect key="frame" x="64" y="307.33333333333331" width="247" height="197.33333333333331"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2Ty-LC-rCq" secondAttribute="height" multiplier="287:229" id="IHL-Gb-9IR"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.98594086284349658" blue="0.52641081221941111" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2Ty-LC-rCq" firstAttribute="centerY" secondItem="rsB-a4-Jq3" secondAttribute="centerY" id="gA7-wk-fnO"/>
+                            <constraint firstItem="2Ty-LC-rCq" firstAttribute="centerX" secondItem="rsB-a4-Jq3" secondAttribute="centerX" id="iOu-Kf-ySz"/>
+                            <constraint firstItem="2Ty-LC-rCq" firstAttribute="leading" secondItem="FUC-Ek-BGz" secondAttribute="leading" constant="64" id="jI2-Dm-FOV"/>
+                            <constraint firstItem="FUC-Ek-BGz" firstAttribute="trailing" secondItem="2Ty-LC-rCq" secondAttribute="trailing" constant="64" id="whr-ha-FNz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="FUC-Ek-BGz"/>
                     </view>
                 </viewController>
@@ -137,6 +145,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexBackgroundColor" red="0.72208523750305176" green="0.65652936697006226" blue="0.92565149068832397" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="JournalTableViewCell" rowHeight="288" id="cDN-av-1oF" customClass="JournalTableViewCell" customModule="REMOLD" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="288"/>
@@ -284,7 +293,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="brain" width="287" height="229"/>
         <image name="gear" width="840" height="493"/>
-        <image name="sleepy brain" width="2100" height="1500"/>
     </resources>
 </document>

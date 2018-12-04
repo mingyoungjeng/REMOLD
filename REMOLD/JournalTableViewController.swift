@@ -38,14 +38,7 @@ class JournalTableViewController: UITableViewController {
         // self.clearsSelectionOnViewWillAppear = false
         
         // Sets Date Format
-        dateFormatter.dateFormat = "MMM dd, yyyy"
-        
-        // Loading samples for testing
-        let test1 = Journal(date: dateFormatter.date(from: "JUN 06, 1970")!, entry: "test1")!
-        let test2 = Journal(date: dateFormatter.date(from: "MAY 10, 2001")!, entry: "test2")!
-        let test3 = Journal(date: dateFormatter.date(from: "DEC 29, 1775")!, entry: "test3")!
-        
-        journals += [test1, test2, test3]
+        dateFormatter.dateFormat = "MMMM d, yyyy"
     }
 
     override func didReceiveMemoryWarning() {
@@ -146,7 +139,7 @@ class JournalTableViewController: UITableViewController {
         
         // 5. Save PDF file
         
-        var path = "\(NSTemporaryDirectory())Journals.pdf"
+        let path = "\(NSTemporaryDirectory())Journals.pdf"
         pdfData.write(toFile: path, atomically: true)
         print("open \(path)") // check if we got the path right.
         // open share dialog

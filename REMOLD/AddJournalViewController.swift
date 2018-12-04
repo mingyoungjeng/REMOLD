@@ -21,7 +21,7 @@ class AddJournalViewController: UIViewController {
         
         textView.delegate = self
         
-        let prompts = ["prompt1","prompt2","prompt3","prompt4"]
+        let prompts = ["What did you do today to improve yourself?","Did you feel like you had a good day today? Why or why not?"]
         textView.text = prompts.randomElement()
     }
     
