@@ -39,6 +39,10 @@ class JournalTableViewController: UITableViewController {
         
         // Sets Date Format
         dateFormatter.dateFormat = "MMMM d, yyyy"
+		
+		if let savedJournals = loadJournals() {
+			journals += savedJournals
+		}
     }
 
     override func didReceiveMemoryWarning() {
