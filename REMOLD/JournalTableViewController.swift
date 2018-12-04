@@ -14,6 +14,7 @@ class JournalTableViewController: UITableViewController {
     
     var journals = [Journal]() // Collection of all Journals
     let dateFormatter = DateFormatter()
+	var docController: UIDocumentInteractionController!
     
     // Unwinds from AddJournalViewController
     @IBAction func unwindtoJournalTableViewController (_ segue:UIStoryboardSegue) {
@@ -37,14 +38,11 @@ class JournalTableViewController: UITableViewController {
         // self.clearsSelectionOnViewWillAppear = false
         
         // Sets Date Format
-        dateFormatter.dateFormat = "MMM dd, yyyy"
-        
-        // Loading samples for testing
-        let test1 = Journal(date: dateFormatter.date(from: "JUN 06, 1970")!, entry: "test1")!
-        let test2 = Journal(date: dateFormatter.date(from: "MAY 10, 2001")!, entry: "test2")!
-        let test3 = Journal(date: dateFormatter.date(from: "DEC 29, 1775")!, entry: "test3")!
-        
-        journals += [test1, test2, test3]
+        dateFormatter.dateFormat = "MMMM d, yyyy"
+		
+		if let savedJournals = loadJournals() {
+			journals += savedJournals
+		}
     }
 
     override func didReceiveMemoryWarning() {
@@ -87,7 +85,7 @@ class JournalTableViewController: UITableViewController {
     }
     
      // Override to support editing the table view.
-     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
          if editingStyle == .delete {
             // Delete the row from the data source
             journals.remove(at: indexPath.row)
@@ -104,11 +102,58 @@ class JournalTableViewController: UITableViewController {
     
     
     @IBAction func ShareJournal(_ sender: UIBarButtonItem) {
-    /*
-        let journals: PDFDocument
-        let vc = UIActivityViewController(activityItems: [journals], applicationActivities: [])
-        present(vc, animated: true)
-    */
+        
+        // 1. Create a print formatter
+        
+		var html = "" // create some text as the body of the PDF with html.
+		
+		for i in journals {
+			html += "<h2>\(dateFormatter.string(from: i.date))</h2><h4>\(i.entry)</h4><br>"
+		}
+		
+        
+        let fmt = UIMarkupTextPrintFormatter(markupText: html)
+        
+        // 2. Assign print formatter to UIPrintPageRenderer
+        
+        let render = UIPrintPageRenderer()
+        render.addPrintFormatter(fmt, startingAtPageAt: 0)
+        
+        // 3. Assign paperRect and printableRect
+        
+        let page = CGRect(x: 10, y: 10, width: 595.2, height: 841.8) // A4, 72 dpi, x and y are horizontal and vertical margins
+        let printable = page.insetBy(dx: 0, dy: 0)
+        
+        render.setValue(NSValue(cgRect: page), forKey: "paperRect")
+        render.setValue(NSValue(cgRect: printable), forKey: "printableRect")
+        
+        // 4. Create PDF context and draw
+        
+        let pdfData = NSMutableData()
+        UIGraphicsBeginPDFContextToData(pdfData, CGRect.zero, nil)
+        
+        for i in 1...render.numberOfPages {
+            
+            UIGraphicsBeginPDFPage();
+            let bounds = UIGraphicsGetPDFContextBounds()
+            render.drawPage(at: i - 1, in: bounds)
+        }
+        
+        UIGraphicsEndPDFContext();
+        
+        // 5. Save PDF file
+        
+        let path = "\(NSTemporaryDirectory())Journals.pdf"
+        pdfData.write(toFile: path, atomically: true)
+        print("open \(path)") // check if we got the path right.
+        // open share dialog
+        print("opening share dialog")
+        // Initialize Document Interaction Controller
+        docController = UIDocumentInteractionController(url: URL(fileURLWithPath: path))
+        // Configure Document Interaction Controller
+		docController.delegate = self as? UIDocumentInteractionControllerDelegate
+        // Present Open In Menu
+        docController.presentOptionsMenu(from: sender, animated: true) // create an outlet from an Export bar button outlet, then use it as the `from` argument
     }
     
     private func saveJournals() {
