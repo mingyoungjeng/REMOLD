@@ -20,6 +20,9 @@ class AddJournalViewController: UIViewController {
         super.viewDidLoad()
         
         textView.delegate = self
+        
+        let prompts = ["What did you do today to improve yourself?","Did you feel like you had a good day today? Why or why not?"]
+        textView.text = prompts.randomElement()
     }
     
     override func didReceiveMemoryWarning() {

@@ -34,16 +34,14 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FDZ-S2-hAb">
-                                            <rect key="frame" x="16" y="11" width="305" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FDZ-S2-hAb">
+                                            <rect key="frame" x="15.999999999999996" y="11.333333333333336" width="41.666666666666657" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWk-j7-KjK">
-                                            <rect key="frame" x="329" y="6" width="30" height="30"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWk-j7-KjK">
+                                            <rect key="frame" x="57.666666666666657" y="7" width="301.33333333333337" height="30"/>
                                             <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
                                             <state key="normal" title="Call"/>
                                             <connections>
@@ -51,6 +49,13 @@
                                             </connections>
                                         </button>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="kWk-j7-KjK" firstAttribute="leading" secondItem="FDZ-S2-hAb" secondAttribute="trailing" id="EQ1-W1-v6t"/>
+                                        <constraint firstAttribute="trailing" secondItem="kWk-j7-KjK" secondAttribute="trailing" constant="16" id="pxP-lX-Ch0"/>
+                                        <constraint firstItem="kWk-j7-KjK" firstAttribute="centerY" secondItem="hAi-Ge-6Zp" secondAttribute="centerY" id="qcp-9c-EBW"/>
+                                        <constraint firstItem="FDZ-S2-hAb" firstAttribute="leading" secondItem="hAi-Ge-6Zp" secondAttribute="leadingMargin" id="wM0-mX-X5H"/>
+                                        <constraint firstItem="FDZ-S2-hAb" firstAttribute="centerY" secondItem="hAi-Ge-6Zp" secondAttribute="centerY" id="y7e-F2-tbv"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="Label" destination="FDZ-S2-hAb" id="KTr-aY-grL"/>
@@ -66,7 +71,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KDI-hO-ei7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-311.19999999999999" y="-304.4977511244378"/>
+            <point key="canvasLocation" x="-311.19999999999999" y="-305.17241379310349"/>
         </scene>
         <!--Navigation View Controller-->
         <scene sceneID="Vnt-ID-zCr">
@@ -116,12 +121,20 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sleepy brain" translatesAutoresizingMaskIntoConstraints="NO" id="2Ty-LC-rCq">
-                                <rect key="frame" x="-10" y="253" width="395" height="307"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brain" translatesAutoresizingMaskIntoConstraints="NO" id="2Ty-LC-rCq">
+                                <rect key="frame" x="64" y="307.33333333333331" width="247" height="197.33333333333331"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2Ty-LC-rCq" secondAttribute="height" multiplier="287:229" id="IHL-Gb-9IR"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.98594086284349658" blue="0.52641081221941111" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2Ty-LC-rCq" firstAttribute="centerY" secondItem="rsB-a4-Jq3" secondAttribute="centerY" id="gA7-wk-fnO"/>
+                            <constraint firstItem="2Ty-LC-rCq" firstAttribute="centerX" secondItem="rsB-a4-Jq3" secondAttribute="centerX" id="iOu-Kf-ySz"/>
+                            <constraint firstItem="2Ty-LC-rCq" firstAttribute="leading" secondItem="FUC-Ek-BGz" secondAttribute="leading" constant="64" id="jI2-Dm-FOV"/>
+                            <constraint firstItem="FUC-Ek-BGz" firstAttribute="trailing" secondItem="2Ty-LC-rCq" secondAttribute="trailing" constant="64" id="whr-ha-FNz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="FUC-Ek-BGz"/>
                     </view>
                 </viewController>
@@ -137,6 +150,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexBackgroundColor" red="0.72208523750305176" green="0.65652936697006226" blue="0.92565149068832397" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="JournalTableViewCell" rowHeight="288" id="cDN-av-1oF" customClass="JournalTableViewCell" customModule="REMOLD" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="288"/>
@@ -152,7 +166,7 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Lmf-bO-62Z">
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lmf-bO-62Z">
                                             <rect key="frame" x="16" y="40" width="343" height="238"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -284,7 +298,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="brain" width="287" height="229"/>
         <image name="gear" width="840" height="493"/>
-        <image name="sleepy brain" width="2100" height="1500"/>
     </resources>
 </document>
