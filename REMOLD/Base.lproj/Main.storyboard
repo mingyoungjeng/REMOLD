@@ -300,7 +300,6 @@
                                 <state key="selected" title="button2" image="buttonPressed"/>
                                 <connections>
                                     <action selector="button2:" destination="Wnn-7b-HSl" eventType="touchDown" id="LIw-ya-6PU"/>
-                                    <action selector="button2:" destination="Wnn-7b-HSl" eventType="touchUpInside" id="SXs-pC-Ni9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mGo-uD-O4H">
@@ -310,7 +309,7 @@
                                 <state key="normal" title="Button" image="circle-png-circle-png-hd-1600" backgroundImage="circle-png-circle-png-hd-1600"/>
                                 <state key="selected" title="button3" image="buttonPressed"/>
                                 <connections>
-                                    <action selector="button3:" destination="Wnn-7b-HSl" eventType="touchUpInside" id="ugt-QD-yLh"/>
+                                    <action selector="button3:" destination="Wnn-7b-HSl" eventType="touchUpInside" id="fCA-CX-UEm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMa-tF-4Qv">
@@ -320,7 +319,7 @@
                                 <state key="normal" title="Button" image="circle-png-circle-png-hd-1600" backgroundImage="circle-png-circle-png-hd-1600"/>
                                 <state key="selected" title="button4" image="buttonPressed"/>
                                 <connections>
-                                    <action selector="button4:" destination="Wnn-7b-HSl" eventType="touchUpInside" id="kwO-ID-lrc"/>
+                                    <action selector="button4:" destination="Wnn-7b-HSl" eventType="touchUpInside" id="NG5-Fd-zI7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMB-5A-XwK">
@@ -330,7 +329,7 @@
                                 <state key="normal" title="Button" image="circle-png-circle-png-hd-1600" backgroundImage="circle-png-circle-png-hd-1600"/>
                                 <state key="selected" title="button5" image="buttonPressed" backgroundImage="buttonPressed"/>
                                 <connections>
-                                    <action selector="button5:" destination="Wnn-7b-HSl" eventType="touchUpInside" id="UTS-wg-Wrg"/>
+                                    <action selector="button5:" destination="Wnn-7b-HSl" eventType="touchUpInside" id="fVe-2m-HiS"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -344,11 +343,11 @@
                         <viewLayoutGuide key="safeArea" id="EZY-GP-uju"/>
                     </view>
                     <connections>
-                        <outlet property="button1" destination="9PG-DU-z9w" id="RUt-0b-cDO"/>
-                        <outlet property="button2" destination="yu4-cg-ZIP" id="8Tj-Ci-qWy"/>
-                        <outlet property="button3" destination="mGo-uD-O4H" id="dM5-lr-SJV"/>
-                        <outlet property="button4" destination="HMa-tF-4Qv" id="gln-8m-Lkq"/>
-                        <outlet property="button5" destination="uMB-5A-XwK" id="5Qf-VU-Cz3"/>
+                        <outlet property="button1" destination="9PG-DU-z9w" id="WPY-Xe-ED0"/>
+                        <outlet property="button2" destination="yu4-cg-ZIP" id="iRb-vg-TZ8"/>
+                        <outlet property="button3" destination="mGo-uD-O4H" id="7i3-QF-3Rh"/>
+                        <outlet property="button4" destination="HMa-tF-4Qv" id="HRB-8D-uGl"/>
+                        <outlet property="button5" destination="uMB-5A-XwK" id="pgS-GJ-hV2"/>
                         <outlet property="textField" destination="CYJ-41-3Qw" id="OZm-XC-CHc"/>
                     </connections>
                 </viewController>
