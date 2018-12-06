@@ -285,7 +285,7 @@
                                 <state key="normal" title="Button1" image="r" backgroundImage="r"/>
                                 <state key="selected" title="button1" image="brain" backgroundImage="r"/>
                                 <connections>
-                                    <action selector="button1:" destination="Wnn-7b-HSl" eventType="touchDown" id="D4H-V8-5Sj"/>
+                                    <action selector="buttonSelector:" destination="Wnn-7b-HSl" eventType="touchUpInside" id="vXt-EQ-oD8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mGo-uD-O4H">
@@ -295,7 +295,7 @@
                                 <state key="normal" title="Button" image="r" backgroundImage="r"/>
                                 <state key="selected" title="button3" image="brain" backgroundImage="brain"/>
                                 <connections>
-                                    <action selector="button3:" destination="Wnn-7b-HSl" eventType="touchUpInside" id="fCA-CX-UEm"/>
+                                    <action selector="buttonSelector:" destination="Wnn-7b-HSl" eventType="touchUpInside" id="KdM-9q-x6P"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMa-tF-4Qv">
@@ -305,7 +305,7 @@
                                 <state key="normal" title="Button" image="r" backgroundImage="r"/>
                                 <state key="selected" title="button4" image="brain" backgroundImage="brain"/>
                                 <connections>
-                                    <action selector="button4:" destination="Wnn-7b-HSl" eventType="touchUpInside" id="NG5-Fd-zI7"/>
+                                    <action selector="buttonSelector:" destination="Wnn-7b-HSl" eventType="touchUpInside" id="beF-1E-hVC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMB-5A-XwK">
@@ -315,7 +315,7 @@
                                 <state key="normal" title="Button" image="r" backgroundImage="r"/>
                                 <state key="selected" title="button5" image="brain" backgroundImage="brain"/>
                                 <connections>
-                                    <action selector="button5:" destination="Wnn-7b-HSl" eventType="touchUpInside" id="fVe-2m-HiS"/>
+                                    <action selector="buttonSelector:" destination="Wnn-7b-HSl" eventType="touchUpInside" id="qhP-JI-CFy"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="center" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYJ-41-3Qw">
@@ -336,7 +336,7 @@
                                 <state key="normal" title="Button" image="r" backgroundImage="r"/>
                                 <state key="selected" title="button2" image="brain" backgroundImage="r"/>
                                 <connections>
-                                    <action selector="button2:" destination="Wnn-7b-HSl" eventType="touchDown" id="LIw-ya-6PU"/>
+                                    <action selector="buttonSelector:" destination="Wnn-7b-HSl" eventType="touchUpInside" id="daC-Tq-ry0"/>
                                 </connections>
                             </button>
                         </subviews>
