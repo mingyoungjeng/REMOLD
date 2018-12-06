@@ -121,12 +121,6 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brain" translatesAutoresizingMaskIntoConstraints="NO" id="2Ty-LC-rCq">
-                                <rect key="frame" x="64" y="307.33333333333331" width="247" height="197.33333333333331"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="2Ty-LC-rCq" secondAttribute="height" multiplier="287:229" id="IHL-Gb-9IR"/>
-                                </constraints>
-                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="etI-vr-nHH" customClass="textfield">
                                 <rect key="frame" x="64" y="198" width="247" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -134,13 +128,20 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPq-qv-xRq">
+                                <rect key="frame" x="44" y="291.66666666666669" width="287" height="229.00000000000006"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="iPq-qv-xRq" secondAttribute="height" multiplier="287:229" id="7Z6-aX-ZTI"/>
+                                </constraints>
+                                <state key="normal" image="brain"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.98594086284349658" blue="0.52641081221941111" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="2Ty-LC-rCq" firstAttribute="centerY" secondItem="rsB-a4-Jq3" secondAttribute="centerY" id="gA7-wk-fnO"/>
-                            <constraint firstItem="2Ty-LC-rCq" firstAttribute="centerX" secondItem="rsB-a4-Jq3" secondAttribute="centerX" id="iOu-Kf-ySz"/>
-                            <constraint firstItem="2Ty-LC-rCq" firstAttribute="leading" secondItem="FUC-Ek-BGz" secondAttribute="leading" constant="64" id="jI2-Dm-FOV"/>
-                            <constraint firstItem="FUC-Ek-BGz" firstAttribute="trailing" secondItem="2Ty-LC-rCq" secondAttribute="trailing" constant="64" id="whr-ha-FNz"/>
+                            <constraint firstItem="FUC-Ek-BGz" firstAttribute="trailing" secondItem="iPq-qv-xRq" secondAttribute="trailing" constant="44" id="2qZ-Vh-MPW"/>
+                            <constraint firstItem="iPq-qv-xRq" firstAttribute="centerY" secondItem="rsB-a4-Jq3" secondAttribute="centerY" id="3JG-F7-Opf"/>
+                            <constraint firstItem="iPq-qv-xRq" firstAttribute="centerX" secondItem="rsB-a4-Jq3" secondAttribute="centerX" id="XPQ-Fo-hGw"/>
+                            <constraint firstItem="iPq-qv-xRq" firstAttribute="leading" secondItem="FUC-Ek-BGz" secondAttribute="leading" constant="44" id="e9q-Dx-4df"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FUC-Ek-BGz"/>
                     </view>
