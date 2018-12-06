@@ -127,6 +127,13 @@
                                     <constraint firstAttribute="width" secondItem="2Ty-LC-rCq" secondAttribute="height" multiplier="287:229" id="IHL-Gb-9IR"/>
                                 </constraints>
                             </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="etI-vr-nHH" customClass="textfield">
+                                <rect key="frame" x="64" y="198" width="247" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.98594086284349658" blue="0.52641081221941111" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -271,69 +278,69 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYJ-41-3Qw">
-                                <rect key="frame" x="0.0" y="252" width="375" height="119"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="119" id="lRg-OX-sLf"/>
-                                </constraints>
-                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9PG-DU-z9w">
-                                <rect key="frame" x="29" y="560" width="56" height="55"/>
+                                <rect key="frame" x="30" y="560" width="56" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                <state key="normal" title="Button1" image="circle-png-circle-png-hd-1600" backgroundImage="circle-png-circle-png-hd-1600"/>
-                                <state key="selected" title="button1" image="buttonPressed"/>
+                                <state key="normal" title="Button1" image="r" backgroundImage="r"/>
+                                <state key="selected" title="button1" image="brain" backgroundImage="r"/>
                                 <connections>
                                     <action selector="button1:" destination="Wnn-7b-HSl" eventType="touchDown" id="D4H-V8-5Sj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yu4-cg-ZIP">
-                                <rect key="frame" x="97" y="560" width="56" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
-                                <state key="normal" title="Button" image="circle-png-circle-png-hd-1600" backgroundImage="circle-png-circle-png-hd-1600"/>
-                                <state key="selected" title="button2" image="buttonPressed"/>
-                                <connections>
-                                    <action selector="button2:" destination="Wnn-7b-HSl" eventType="touchDown" id="LIw-ya-6PU"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mGo-uD-O4H">
-                                <rect key="frame" x="161" y="560" width="56" height="55"/>
+                                <rect key="frame" x="175" y="560" width="56" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                <state key="normal" title="Button" image="circle-png-circle-png-hd-1600" backgroundImage="circle-png-circle-png-hd-1600"/>
-                                <state key="selected" title="button3" image="buttonPressed"/>
+                                <state key="normal" title="Button" image="r" backgroundImage="r"/>
+                                <state key="selected" title="button3" image="brain" backgroundImage="brain"/>
                                 <connections>
                                     <action selector="button3:" destination="Wnn-7b-HSl" eventType="touchUpInside" id="fCA-CX-UEm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMa-tF-4Qv">
-                                <rect key="frame" x="225" y="560" width="56" height="55"/>
+                                <rect key="frame" x="239" y="560" width="56" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                <state key="normal" title="Button" image="circle-png-circle-png-hd-1600" backgroundImage="circle-png-circle-png-hd-1600"/>
-                                <state key="selected" title="button4" image="buttonPressed"/>
+                                <state key="normal" title="Button" image="r" backgroundImage="r"/>
+                                <state key="selected" title="button4" image="brain" backgroundImage="brain"/>
                                 <connections>
                                     <action selector="button4:" destination="Wnn-7b-HSl" eventType="touchUpInside" id="NG5-Fd-zI7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMB-5A-XwK">
-                                <rect key="frame" x="289" y="560" width="56" height="55"/>
+                                <rect key="frame" x="303" y="560" width="56" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                <state key="normal" title="Button" image="circle-png-circle-png-hd-1600" backgroundImage="circle-png-circle-png-hd-1600"/>
-                                <state key="selected" title="button5" image="buttonPressed" backgroundImage="buttonPressed"/>
+                                <state key="normal" title="Button" image="r" backgroundImage="r"/>
+                                <state key="selected" title="button5" image="brain" backgroundImage="brain"/>
                                 <connections>
                                     <action selector="button5:" destination="Wnn-7b-HSl" eventType="touchUpInside" id="fVe-2m-HiS"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="center" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYJ-41-3Qw">
+                                <rect key="frame" x="0.0" y="249" width="375" height="119"/>
+                                <color key="backgroundColor" red="0.76470588235294112" green="0.82745098039215681" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="119" id="lRg-OX-sLf"/>
+                                </constraints>
+                                <color key="textColor" red="0.9360840727034514" green="1" blue="0.98218908615291789" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yu4-cg-ZIP">
+                                <rect key="frame" x="103" y="560" width="56" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                <state key="normal" title="Button" image="r" backgroundImage="r"/>
+                                <state key="selected" title="button2" image="brain" backgroundImage="r"/>
+                                <connections>
+                                    <action selector="button2:" destination="Wnn-7b-HSl" eventType="touchDown" id="LIw-ya-6PU"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.71264583969999995" green="1" blue="0.58877876770000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.7610664124312273" green="0.8227619843984848" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="CYJ-41-3Qw" firstAttribute="centerX" secondItem="qRy-xI-ne0" secondAttribute="centerX" id="6t7-xu-3ej"/>
                             <constraint firstItem="CYJ-41-3Qw" firstAttribute="leading" secondItem="qRy-xI-ne0" secondAttribute="leading" id="YVH-5J-Duy"/>
@@ -376,8 +383,7 @@
     </scenes>
     <resources>
         <image name="brain" width="287" height="229"/>
-        <image name="buttonPressed" width="600" height="600"/>
-        <image name="circle-png-circle-png-hd-1600" width="1600" height="1600"/>
         <image name="gear" width="840" height="493"/>
+        <image name="r" width="863" height="689"/>
     </resources>
 </document>

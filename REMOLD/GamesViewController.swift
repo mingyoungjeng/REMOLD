@@ -60,7 +60,7 @@ class GamesViewController: UIViewController {
         button3.isSelected = false
         button4.isSelected = false
         button5.isSelected = false
-                textField.text = a.randomElement()
+        textField.text = a.randomElement()
         
     }
 }

@@ -14,6 +14,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         let quotes = ["quote1", "quote2", "quote3","quote4","quote5"]
         print(quotes.randomElement()!)
+     
         // Do any additional setup after loading the view.
     }
 
