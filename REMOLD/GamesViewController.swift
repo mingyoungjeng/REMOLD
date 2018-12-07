@@ -24,14 +24,22 @@ class GamesViewController: UIViewController {
     @IBAction func buttonSelector(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected
         
+        UIView.animate(withDuration: 0.25, animations: {
+            sender.imageView!.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+            sender.imageView!.transform = CGAffineTransform(scaleX: 1, y: 1)
+        })
+        
         if button5.isSelected && button4.isSelected && button3.isSelected && button2.isSelected && button1.isSelected {
             
-            button1.isSelected = false
-            button2.isSelected = false
-            button3.isSelected = false
-            button4.isSelected = false
-            button5.isSelected = false
-            textField.text = a.randomElement()
+            UIView.animate(withDuration: 0.1, delay: 0.5, animations: {
+
+                self.button1.isSelected = false
+                self.button2.isSelected = false
+                self.button3.isSelected = false
+                self.button4.isSelected = false
+                self.button5.isSelected = false
+                self.textField.text = self.a.randomElement()
+            })
         
         }
     }

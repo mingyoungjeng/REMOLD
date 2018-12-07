@@ -65,7 +65,7 @@
 		B12DEC7221668D23002A60E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B13EB02E216E3AAA002F4713 /* LiberationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiberationsViewController.swift; sourceTree = "<group>"; };
 		B13EB030216E3ACE002F4713 /* GamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesViewController.swift; sourceTree = "<group>"; };
-		B13EB034216E4901002F4713 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B13EB034216E4901002F4713 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; usesTabs = 1; };
 		B142F46E219CA84D00FCF5F5 /* JournalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalViewController.swift; sourceTree = "<group>"; };
 		B142F470219CA87900FCF5F5 /* JournalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalTableViewController.swift; sourceTree = "<group>"; usesTabs = 1; };
 		B142F472219CB05800FCF5F5 /* AddJournalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddJournalViewController.swift; sourceTree = "<group>"; };

@@ -25,7 +25,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Afx-Oc-0ft">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.82745098039999998" green="0.89411764709999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ResourcesTableViewCell" id="VWB-J3-j6u" customClass="ResourcesTableViewCell" customModule="REMOLD" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -57,6 +57,7 @@
                                         <constraint firstItem="FDZ-S2-hAb" firstAttribute="centerY" secondItem="hAi-Ge-6Zp" secondAttribute="centerY" id="y7e-F2-tbv"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="Label" destination="FDZ-S2-hAb" id="KTr-aY-grL"/>
                                 </connections>
@@ -96,7 +97,7 @@
                     <view key="view" contentMode="scaleToFill" id="1Sj-RK-TFH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.61618707160226061" green="1" blue="0.99981803931063651" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.82745098039999998" green="0.89411764709999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="XYH-iJ-9D4"/>
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
@@ -128,15 +129,19 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPq-qv-xRq">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPq-qv-xRq">
                                 <rect key="frame" x="44" y="291.66666666666669" width="287" height="229.00000000000006"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="iPq-qv-xRq" secondAttribute="height" multiplier="287:229" id="7Z6-aX-ZTI"/>
                                 </constraints>
                                 <state key="normal" image="brain"/>
+                                <connections>
+                                    <action selector="buttonDown:" destination="MQf-I3-zHV" eventType="touchDown" id="wkK-zV-HXz"/>
+                                    <action selector="buttonUp:" destination="MQf-I3-zHV" eventType="touchUpInside" id="dmo-Cg-MAW"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.98594086284349658" blue="0.52641081221941111" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.82745098039999998" green="0.89411764709999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="FUC-Ek-BGz" firstAttribute="trailing" secondItem="iPq-qv-xRq" secondAttribute="trailing" constant="44" id="2qZ-Vh-MPW"/>
                             <constraint firstItem="iPq-qv-xRq" firstAttribute="centerY" secondItem="rsB-a4-Jq3" secondAttribute="centerY" id="3JG-F7-Opf"/>
@@ -157,8 +162,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="280" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="rH1-7H-gaI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="sectionIndexBackgroundColor" red="0.72208523750305176" green="0.65652936697006226" blue="0.92565149068832397" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.82745098039999998" green="0.89411764709999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="JournalTableViewCell" rowHeight="288" id="cDN-av-1oF" customClass="JournalTableViewCell" customModule="REMOLD" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="288"/>
@@ -177,12 +181,13 @@
                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lmf-bO-62Z">
                                             <rect key="frame" x="16" y="40" width="343" height="238"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         </textView>
                                     </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="DateLabel" destination="ZN6-Ad-KP2" id="IQb-i7-tDF"/>
@@ -317,7 +322,7 @@
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYJ-41-3Qw">
                                 <rect key="frame" x="0.0" y="249" width="375" height="119"/>
-                                <color key="backgroundColor" red="0.76470588235294112" green="0.82745098039215681" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="119" id="lRg-OX-sLf"/>
                                 </constraints>
@@ -351,7 +356,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.7610664124312273" green="0.8227619843984848" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.82745098039215681" green="0.89411764705882346" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="yu4-cg-ZIP" firstAttribute="firstBaseline" secondItem="mGo-uD-O4H" secondAttribute="firstBaseline" id="1vp-sH-9mJ"/>
                             <constraint firstItem="HMa-tF-4Qv" firstAttribute="top" secondItem="uMB-5A-XwK" secondAttribute="top" id="8fg-NJ-7Wk"/>

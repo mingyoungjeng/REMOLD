@@ -33,5 +33,15 @@ class HomeViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func buttonDown(_ sender: UIButton) {
+        UIView.animate(withDuration: 0.5, animations: {
+            sender.imageView!.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
+        })
+    }
+    
+    @IBAction func buttonUp(_ sender: UIButton) {
+        UIView.animate(withDuration: 0.5, animations: {
+            sender.imageView!.transform = CGAffineTransform.identity
+        })
+    }
 }
