@@ -24,6 +24,7 @@
 		B142F471219CA87900FCF5F5 /* JournalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B142F470219CA87900FCF5F5 /* JournalTableViewController.swift */; };
 		B142F473219CB05800FCF5F5 /* AddJournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B142F472219CB05800FCF5F5 /* AddJournalViewController.swift */; };
 		B16EEC23219A171B00F1DC27 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16EEC22219A171B00F1DC27 /* NavigationViewController.swift */; };
+		B194F88D21BEEEFF00086929 /* LiberationsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B194F88C21BEEEFF00086929 /* LiberationsNavigationController.swift */; };
 		B1B1015E219382CC006F8E17 /* ResourcesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B1015D219382CC006F8E17 /* ResourcesTableViewCell.swift */; };
 		B1E0BFC62194CB240010AFFA /* ResourcesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E0BFC42194CB240010AFFA /* ResourcesTableViewController.swift */; };
 		B1E0BFC72194CB240010AFFA /* ResourcesTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1E0BFC52194CB240010AFFA /* ResourcesTableViewController.xib */; };
@@ -70,6 +71,7 @@
 		B142F470219CA87900FCF5F5 /* JournalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalTableViewController.swift; sourceTree = "<group>"; usesTabs = 1; };
 		B142F472219CB05800FCF5F5 /* AddJournalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddJournalViewController.swift; sourceTree = "<group>"; };
 		B16EEC22219A171B00F1DC27 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		B194F88C21BEEEFF00086929 /* LiberationsNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiberationsNavigationController.swift; sourceTree = "<group>"; };
 		B1B1015D219382CC006F8E17 /* ResourcesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesTableViewCell.swift; sourceTree = "<group>"; };
 		B1E0BFC42194CB240010AFFA /* ResourcesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesTableViewController.swift; sourceTree = "<group>"; };
 		B1E0BFC52194CB240010AFFA /* ResourcesTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResourcesTableViewController.xib; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 			children = (
 				B12DEC4E21668D16002A60E0 /* AppDelegate.swift */,
 				B12DEC5421668D16002A60E0 /* Main.storyboard */,
+				B194F88C21BEEEFF00086929 /* LiberationsNavigationController.swift */,
 				B111C568219F580000C2E848 /* Journal.swift */,
 				B142F472219CB05800FCF5F5 /* AddJournalViewController.swift */,
 				B142F470219CA87900FCF5F5 /* JournalTableViewController.swift */,
@@ -300,6 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B194F88D21BEEEFF00086929 /* LiberationsNavigationController.swift in Sources */,
 				B12DEC4F21668D16002A60E0 /* AppDelegate.swift in Sources */,
 				B142F46F219CA84D00FCF5F5 /* JournalViewController.swift in Sources */,
 				B111C56B21A3513B00C2E848 /* JournalTableViewCell.swift in Sources */,

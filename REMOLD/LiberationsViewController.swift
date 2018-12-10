@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LiberationsViewController: UIViewController {
+class LiberationsViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
