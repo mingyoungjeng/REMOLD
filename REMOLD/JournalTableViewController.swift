@@ -15,6 +15,7 @@ class JournalTableViewController: UITableViewController {
     var journals = [Journal]() // Collection of all Journals
     let dateFormatter = DateFormatter()
 	var docController: UIDocumentInteractionController!
+	let searchController = UISearchController(searchResultsController: nil)
     
     // Unwinds from AddJournalViewController
     @IBAction func unwindtoJournalTableViewController (_ segue:UIStoryboardSegue) {
@@ -43,6 +44,13 @@ class JournalTableViewController: UITableViewController {
 		if let savedJournals = loadJournals() {
 			journals += savedJournals
 		}
+		
+		// Setup the Search Controller
+		searchController.searchResultsUpdater = self as UISearchResultsUpdating
+		searchController.obscuresBackgroundDuringPresentation = false
+		searchController.searchBar.placeholder = "Search Journals"
+		navigationItem.searchController = searchController
+		definesPresentationContext = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -96,7 +104,13 @@ class JournalTableViewController: UITableViewController {
          }
      }
     
-    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        tableView.estimatedRowHeight = 85.0
+        tableView.rowHeight = UITableView.automaticDimension
+        
+        return tableView.rowHeight
+    }
     
     
     
@@ -193,4 +207,11 @@ class JournalTableViewController: UITableViewController {
     }
     */
 
+}
+
+extension JournalTableViewController: UISearchResultsUpdating {
+	// MARK: - UISearchResultsUpdating Delegate
+	func updateSearchResults(for searchController: UISearchController) {
+		// TODO
+	}
 }
