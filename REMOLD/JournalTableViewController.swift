@@ -13,6 +13,7 @@ import os.log
 class JournalTableViewController: UITableViewController {
     
     var journals = [Journal]() // Collection of all Journals
+	var journals_f = [Journal]()
     let dateFormatter = DateFormatter()
 	var docController: UIDocumentInteractionController!
 	let searchController = UISearchController(searchResultsController: nil)
@@ -69,7 +70,7 @@ class JournalTableViewController: UITableViewController {
         }
         
         // Fetches the appropriate one for the data source layout.
-        let journal = journals[indexPath.row]
+		let journal = isFiltering() ? journals_f[indexPath.row] : journals[indexPath.row]
         
         cell.dateLabel.text = dateFormatter.string(from: journal.date)
         cell.entryField.text = journal.entry
@@ -83,7 +84,11 @@ class JournalTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return journals.count
+		if isFiltering() {
+			return journals_f.count
+		}
+		
+		return journals.count
     }
     
     // Override to support conditional editing of the table view.
@@ -112,7 +117,14 @@ class JournalTableViewController: UITableViewController {
         return tableView.rowHeight
     }
     
-    
+	func isFiltering() -> Bool {
+		return searchController.isActive && !searchBarIsEmpty()
+	}
+	
+	func searchBarIsEmpty() -> Bool {
+		// Returns true if the text is empty or nil
+		return searchController.searchBar.text?.isEmpty ?? true
+	}
     
     
     @IBAction func ShareJournal(_ sender: UIBarButtonItem) {
@@ -182,6 +194,14 @@ class JournalTableViewController: UITableViewController {
     private func loadJournals() -> [Journal]?  {
         return NSKeyedUnarchiver.unarchiveObject(withFile: Journal.ArchiveURL.path) as? [Journal]
     }
+	
+	func filterContentForSearchText(_ searchText: String, scope: String = "All") {
+		journals_f = journals.filter({( journal : Journal) -> Bool in
+			return journal.entry.lowercased().contains(searchText.lowercased())
+		})
+		
+		tableView.reloadData()
+	}
     /*
     // Override to support rearranging the table view.
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
@@ -212,6 +232,6 @@ class JournalTableViewController: UITableViewController {
 extension JournalTableViewController: UISearchResultsUpdating {
 	// MARK: - UISearchResultsUpdating Delegate
 	func updateSearchResults(for searchController: UISearchController) {
-		// TODO
+		filterContentForSearchText(searchController.searchBar.text!)
 	}
 }
