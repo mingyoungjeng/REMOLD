@@ -14,6 +14,7 @@ class NavigationViewController: UINavigationController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.navigationBar.prefersLargeTitles = true
     }
 
     override func didReceiveMemoryWarning() {

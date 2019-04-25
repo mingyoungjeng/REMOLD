@@ -15,7 +15,11 @@ class JournalTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
         // Initialization code
+        entryField.isScrollEnabled = false // Allows for infinite scroll
+        entryField.textContainerInset = UIEdgeInsets.zero
+        entryField.textContainer.lineFragmentPadding = 0
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
