@@ -9,12 +9,17 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
+	let a = ["“You are imperfect, permanently and inevitably flawed. And you are beautiful.”-Amy Bloom",
+			 "“You yourself, as much as anybody in the entire universe, deserve your love and affection” ― Sharon Salzberg", "Wanting to be someone else is a waste of the person you are.― Marilyn Monroe",
+			 "The worst loneliness is to not be comfortable with yourself.― Mark Twain","Peace comes from within.  Do not seek it without.― Siddhārtha Gautama"]
+    @IBOutlet weak var quotes: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+		
      
         // Do any additional setup after loading the view.
     }
+	
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -40,6 +45,7 @@ class HomeViewController: UIViewController {
     @IBAction func buttonUp(_ sender: UIButton) {
         UIView.animate(withDuration: 0.5, animations: {
             sender.imageView!.transform = CGAffineTransform.identity
+			self.quotes.text = self.a.randomElement()
         })
     }
 }
