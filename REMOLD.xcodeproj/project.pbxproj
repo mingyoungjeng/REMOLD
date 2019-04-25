@@ -25,6 +25,7 @@
 		B142F473219CB05800FCF5F5 /* AddJournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B142F472219CB05800FCF5F5 /* AddJournalViewController.swift */; };
 		B16EEC23219A171B00F1DC27 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16EEC22219A171B00F1DC27 /* NavigationViewController.swift */; };
 		B194F88D21BEEEFF00086929 /* LiberationsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B194F88C21BEEEFF00086929 /* LiberationsNavigationController.swift */; };
+		B19981722272325A00DAD1FA /* LiberationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19981712272325A00DAD1FA /* LiberationsTableViewCell.swift */; };
 		B1B1015E219382CC006F8E17 /* ResourcesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B1015D219382CC006F8E17 /* ResourcesTableViewCell.swift */; };
 		B1E0BFC62194CB240010AFFA /* ResourcesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E0BFC42194CB240010AFFA /* ResourcesTableViewController.swift */; };
 		B1E0BFC72194CB240010AFFA /* ResourcesTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1E0BFC52194CB240010AFFA /* ResourcesTableViewController.xib */; };
@@ -72,6 +73,7 @@
 		B142F472219CB05800FCF5F5 /* AddJournalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddJournalViewController.swift; sourceTree = "<group>"; };
 		B16EEC22219A171B00F1DC27 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		B194F88C21BEEEFF00086929 /* LiberationsNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiberationsNavigationController.swift; sourceTree = "<group>"; };
+		B19981712272325A00DAD1FA /* LiberationsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiberationsTableViewCell.swift; sourceTree = "<group>"; };
 		B1B1015D219382CC006F8E17 /* ResourcesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesTableViewCell.swift; sourceTree = "<group>"; };
 		B1E0BFC42194CB240010AFFA /* ResourcesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesTableViewController.swift; sourceTree = "<group>"; };
 		B1E0BFC52194CB240010AFFA /* ResourcesTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResourcesTableViewController.xib; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 			children = (
 				B12DEC4E21668D16002A60E0 /* AppDelegate.swift */,
 				B12DEC5421668D16002A60E0 /* Main.storyboard */,
+				B19981712272325A00DAD1FA /* LiberationsTableViewCell.swift */,
 				B194F88C21BEEEFF00086929 /* LiberationsNavigationController.swift */,
 				B111C568219F580000C2E848 /* Journal.swift */,
 				B142F472219CB05800FCF5F5 /* AddJournalViewController.swift */,
@@ -315,6 +318,7 @@
 				B13EB02F216E3AAA002F4713 /* LiberationsViewController.swift in Sources */,
 				B1B1015E219382CC006F8E17 /* ResourcesTableViewCell.swift in Sources */,
 				B13EB035216E4901002F4713 /* HomeViewController.swift in Sources */,
+				B19981722272325A00DAD1FA /* LiberationsTableViewCell.swift in Sources */,
 				B13EB031216E3ACE002F4713 /* GamesViewController.swift in Sources */,
 				B111C569219F580000C2E848 /* Journal.swift in Sources */,
 			);
