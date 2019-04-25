@@ -12,7 +12,7 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let quotes = ["quote1", "quote2", "quote3","quote4","quote5"]
+        let quotes = ["Wanting to be someone else is a waste of who you are―Kurt Cobain", "There is no education like adversity. -Benjamin Disraeli", "You’re only here for a short visit. Don’t hurry, don’t worry. And be sure to smell the flowers along the way. -Walter Hagen","Life is a dance floor. So dance, don’t miss the chance. -Bar Refaeli","The good life is a process, not a state of being. It is a direction not a destination. -Carl Rogers"]
         print(quotes.randomElement()!)
      
         // Do any additional setup after loading the view.
