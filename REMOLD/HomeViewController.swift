@@ -9,15 +9,16 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-	let a = ["“You are imperfect, permanently and inevitably flawed. And you are beautiful.”-Amy Bloom",
-			 "“You yourself, as much as anybody in the entire universe, deserve your love and affection” ― Sharon Salzberg", "Wanting to be someone else is a waste of the person you are.― Marilyn Monroe",
-			 "The worst loneliness is to not be comfortable with yourself.― Mark Twain","Peace comes from within.  Do not seek it without.― Siddhārtha Gautama"]
+	let a = ["“You are imperfect, permanently and inevitably flawed. And you are beautiful.”\n-Amy Bloom",
+			 "“You yourself, as much as anybody in the entire universe, deserve your love and affection”\n― Sharon Salzberg", "“Wanting to be someone else is a waste of the person you are.“\n― Marilyn Monroe",
+			 "“The worst loneliness is to not be comfortable with yourself.“\n― Mark Twain","“Peace comes from within.Do not seek it without.“\n― Siddhārtha Gautama"]
     @IBOutlet weak var quotes: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 		
      
         // Do any additional setup after loading the view.
+		quotes.text = a.randomElement();
     }
 	
     override func didReceiveMemoryWarning() {

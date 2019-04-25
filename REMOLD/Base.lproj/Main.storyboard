@@ -98,16 +98,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Go0-nx-ovR">
-                                <rect key="frame" x="304" y="752" width="64" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="1"/>
-                                <state key="normal" title="Settings" image="gear">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GT1-OP-AhP">
+                                <rect key="frame" x="20" y="521" width="335" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="y1A-q6-LfO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPq-qv-xRq">
-                                <rect key="frame" x="44" y="291.66666666666669" width="287" height="229.00000000000006"/>
+                                <rect key="frame" x="44" y="211.66666666666663" width="287" height="229"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="iPq-qv-xRq" secondAttribute="height" multiplier="287:229" id="7Z6-aX-ZTI"/>
                                 </constraints>
@@ -117,20 +118,17 @@
                                     <action selector="buttonUp:" destination="MQf-I3-zHV" eventType="touchUpInside" id="dmo-Cg-MAW"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GT1-OP-AhP">
-                                <rect key="frame" x="166" y="190" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.82745098039999998" green="0.89411764709999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="iPq-qv-xRq" firstAttribute="centerX" secondItem="rsB-a4-Jq3" secondAttribute="centerX" id="07g-8k-9Nt"/>
                             <constraint firstItem="FUC-Ek-BGz" firstAttribute="trailing" secondItem="iPq-qv-xRq" secondAttribute="trailing" constant="44" id="2qZ-Vh-MPW"/>
-                            <constraint firstItem="iPq-qv-xRq" firstAttribute="centerY" secondItem="rsB-a4-Jq3" secondAttribute="centerY" id="3JG-F7-Opf"/>
-                            <constraint firstItem="iPq-qv-xRq" firstAttribute="centerX" secondItem="rsB-a4-Jq3" secondAttribute="centerX" id="XPQ-Fo-hGw"/>
+                            <constraint firstItem="iPq-qv-xRq" firstAttribute="centerY" secondItem="rsB-a4-Jq3" secondAttribute="centerY" constant="-80" id="3JG-F7-Opf"/>
+                            <constraint firstItem="GT1-OP-AhP" firstAttribute="centerX" secondItem="rsB-a4-Jq3" secondAttribute="centerX" id="66M-EJ-y7W"/>
                             <constraint firstItem="iPq-qv-xRq" firstAttribute="leading" secondItem="FUC-Ek-BGz" secondAttribute="leading" constant="44" id="e9q-Dx-4df"/>
+                            <constraint firstItem="GT1-OP-AhP" firstAttribute="top" secondItem="FUC-Ek-BGz" secondAttribute="top" constant="477" id="jg7-bA-rqe"/>
+                            <constraint firstItem="FUC-Ek-BGz" firstAttribute="trailing" secondItem="GT1-OP-AhP" secondAttribute="trailing" constant="20" id="pP4-4r-6Sa"/>
+                            <constraint firstItem="GT1-OP-AhP" firstAttribute="leading" secondItem="FUC-Ek-BGz" secondAttribute="leading" constant="20" id="ugM-F1-xDZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FUC-Ek-BGz"/>
                     </view>
@@ -474,7 +472,6 @@
     </scenes>
     <resources>
         <image name="brain" width="287" height="229"/>
-        <image name="gear" width="840" height="493"/>
         <image name="r" width="863" height="689"/>
     </resources>
 </document>
